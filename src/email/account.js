@@ -7,7 +7,7 @@ sgmail.setApiKey(sendgridAPI)
 const sendWelcomeEmail = (email,name)=>{
     sgmail.send({
         to:email,
-        from:'task-manager@task-manager.com',
+        from:'task-manager@elo.com',
         subject:'welcome to the plateform',
         text:`Hi,${name} you are welcome to our new plateform`
     })
@@ -16,7 +16,7 @@ const sendWelcomeEmail = (email,name)=>{
 const sendCancelEmail=(email,name)=>{
     sgmail.send({
         to:email,
-        from:'task-manager@task-manager.com',
+        from:'task-manager@elo.com',
         subject:'We hope we will see you again',
         text:`Hi,${name} can you please let us know why you are leaving our plateform`
     })
